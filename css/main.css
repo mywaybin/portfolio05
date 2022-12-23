@@ -1,0 +1,159 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    line-height: 120px;
+    transition: 0.33s;
+    background: #fff;
+}
+
+.header .inner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header img {
+    width: 400px;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 30px;
+    margin: 0 0 0 110px;
+}
+
+.header .gnb>ul>li {
+    position: relative;
+    margin: 0 10px;
+}
+
+.header .gnb>ul>li>a {
+    position: relative;
+    font-size: 20px;
+    color: #333;
+}
+
+.header .gnb>ul>li~li::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background: #333;
+    top: 50%;
+    left: -25px;
+    transform: translate(0, -50%);
+}
+
+.header .right {
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 120px;
+}
+
+
+
+
+.mainVisual .mainSlide figure {
+    position: relative;
+    height: 600px;
+}
+
+.mainVisual .mainSlide .itm01 {
+    background: url(../img/main01.jpg) no-repeat center center/cover;
+    padding: 200px 0 100px 0;
+    height: 100vh;
+}
+
+.mainVisual .mainSlide .itm02 {
+    background: url(../img/main02.jpg) no-repeat center center/cover;
+    padding: 200px 0 100px 0;
+    height: 100vh;
+}
+
+.mainVisual .mainSlide .itm03 {
+    background: url(../img/main03.jpg) no-repeat center center/cover;
+    padding: 200px 0 100px 0;
+    height: 100vh;
+}
+
+.mainVisual .mainSlide .inner {
+    position: absolute;
+    padding: 400px 0;
+    top: 0;
+    left: 380px;
+}
+
+.mainVisual .mainSlide .itm01 h3 {
+    color: #ff0;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+.mainVisual .mainSlide .itm01 p {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.mainVisual .mainSlide .itm02 h3 {
+    color: #444444;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+.mainVisual .mainSlide .itm02 p {
+    color: #444444;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.mainVisual .mainSlide .itm03 h3 {
+    color: #444444;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+.mainVisual .mainSlide .itm03 p {
+    color: #444444;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.mainVisual .mainSlide .itm01 a {
+    display: inline-block;
+    padding: 3px 15px;
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    background: #fff;
+    text-transform: uppercase;
+}
+
+.mainVisual .mainSlide .itm02 a {
+    display: inline-block;
+    padding: 3px 15px;
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    background: #444444;
+    text-transform: uppercase;
+}
+
+.mainVisual .mainSlide .itm03 a {
+    display: inline-block;
+    padding: 3px 15px;
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    background: #444444;
+    text-transform: uppercase;
+}
