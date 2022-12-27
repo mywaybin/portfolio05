@@ -1,3 +1,7 @@
+/* * {
+    outline: 1px solid tomato;
+} */
+
 .header {
     position: fixed;
     top: 0;
@@ -16,7 +20,7 @@
 }
 
 .header img {
-    width: 400px;
+    width: 250px;
 }
 
 .header .gnb>ul {
@@ -32,7 +36,7 @@
 
 .header .gnb>ul>li>a {
     position: relative;
-    font-size: 20px;
+    font-size: 16px;
     color: #333;
 }
 
@@ -41,7 +45,7 @@
     content: "";
     width: 1px;
     height: 15px;
-    background: #333;
+    background: #ddd;
     top: 50%;
     left: -25px;
     transform: translate(0, -50%);
@@ -53,107 +57,287 @@
     line-height: 120px;
 }
 
-
-
-
 .mainVisual .mainSlide figure {
     position: relative;
-    height: 600px;
+    height: 500px;
+    translate: 0.3s;
 }
 
 .mainVisual .mainSlide .itm01 {
-    background: url(../img/main01.jpg) no-repeat center center/cover;
-    padding: 200px 0 100px 0;
-    height: 100vh;
+    background: url(../img/main01.jpg) no-repeat center center;
+    background-color: #f5f5f5;
+    top: 50px;
 }
 
 .mainVisual .mainSlide .itm02 {
-    background: url(../img/main02.jpg) no-repeat center center/cover;
-    padding: 200px 0 100px 0;
-    height: 100vh;
+    background: url(../img/main02.jpg) no-repeat center center;
+    background-color: #f5f5f5;
+    top: 60px;
 }
+
 
 .mainVisual .mainSlide .itm03 {
-    background: url(../img/main03.jpg) no-repeat center center/cover;
-    padding: 200px 0 100px 0;
-    height: 100vh;
+    background: url(../img/main03.jpg) no-repeat center center;
+    background-color: #f5f5f5;
+    top: 50px;
 }
 
-.mainVisual .mainSlide .inner {
+.mainVisual .mainSlide .slick-next {
+    transform: translate(-50%, -50%) rotate(135deg);
+    margin: 0 0 0 700px;
+}
+
+.mainVisual .mainSlide .slick-dots {
     position: absolute;
-    padding: 400px 0;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.mainVisual .mainSlide .slick-dots>li {
+    display: inline-block;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background: #ddd;
+    margin: -12px 6px;
+}
+
+.mainVisual .mainSlide .slick-dots>li.slick-active {
+    background: rgb(245, 190, 39);
+}
+
+.mainVisual .mainSlide .slick-dots>li button {
+    display: none;
+}
+
+.mainVisual .mainSlide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+
+    background: none;
+    border: none;
+
+    font-size: 0;
+
+    width: 50px;
+    height: 50px;
+
+    border-top: 10px solid #ddd;
+    border-left: 10px solid #ddd;
+}
+
+.mainVisual .mainSlide .slick-prev {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    margin: 50px 0 0 -700px;
+}
+
+.mainVisual .mainSlide .slick-next {
+    transform: translate(-50%, -50%) rotate(135deg);
+    margin: 40px 0 0 700px;
+}
+
+.mainContent {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.mainContent h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.mainContent p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+.mainContent .inner {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainContent .inner figure {
+    flex: 1;
+    text-align: center;
+    margin: 0 0 30px 0;
+    background: #ddd;
+    border-radius: 50%;
+    width: 130px;
+    height: 180px;
+}
+
+.mainContent figure {
+    position: relative;
+}
+
+.mainContent figure img {
+    width: 60%;
+}
+
+.mainContent .inner .f1 strong {
+    margin: 32px 0 8px 0;
+}
+
+.mainContent .inner .f1 a {
+    margin: 10px 0 0 0;
+}
+
+.mainContent .inner .f2 strong {
+    margin: 32px 0 8px 0;
+}
+
+.mainContent .inner .f2 a {
+    margin: 10px 0 0 0;
+}
+
+.mainContent .inner .f3 strong {
+    margin: 32px 0 8px 0;
+}
+
+.mainContent .inner .f3 a {
+    margin: 10px 0 0 0;
+}
+
+.mainContent .inner .f4 strong {
+    margin: 32px 0 8px 0;
+}
+
+.mainContent .inner .f4 a {
+    margin: 10px 0 0 0;
+}
+
+.mainContent .img_box {
+    margin: 0 0 20px 0;
+}
+
+.mainContent .img_box .service {
+    position: absolute;
     top: 0;
-    left: 380px;
-}
-
-.mainVisual .mainSlide .itm01 h3 {
-    color: #ff0;
-    font-size: 70px;
-    font-weight: 700;
-    line-height: 80px;
-}
-
-.mainVisual .mainSlide .itm01 p {
+    left: 0;
+    background: #333;
     color: #fff;
-    font-size: 25px;
-    font-weight: 500;
+    display: flex;
+    transition: 0.3s;
 }
 
-.mainVisual .mainSlide .itm02 h3 {
-    color: #444444;
-    font-size: 70px;
-    font-weight: 700;
-    line-height: 80px;
+.mainContent .img_box img {
+    transition: 0.3s;
+    border: 1px solid #ddd;
 }
 
-.mainVisual .mainSlide .itm02 p {
-    color: #444444;
-    font-size: 25px;
-    font-weight: 500;
+.mainContent .img_box:hover img {
+    transform: scale(1.2, 1.2);
+    background-color: #38383873
 }
 
-.mainVisual .mainSlide .itm03 h3 {
-    color: #444444;
-    font-size: 70px;
-    font-weight: 700;
-    line-height: 80px;
+.mainContent strong {
+    display: block;
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
 }
 
-.mainVisual .mainSlide .itm03 p {
-    color: #444444;
-    font-size: 25px;
-    font-weight: 500;
-}
-
-.mainVisual .mainSlide .itm01 a {
+.mainContent a {
     display: inline-block;
-    padding: 3px 15px;
-    margin: 20px 0;
-    font-size: 15px;
-    font-weight: 500;
-    color: #000;
+    padding: 5px 15px;
+    font-size: 12px;
+    border-top: 1px solid #444444ab;
+    border-bottom: 1px solid #444444ab;
+    border-left: 1px solid #444444ab;
+    border-right: 1px solid #444444ab;
+    color: #444444ab;
+    margin: 0 0 20px 0;
+}
+
+.mainContent a:hover {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 12px;
+    background: rgb(245, 190, 39);
+
+    border-top: 1px solid rgb(245, 190, 39);
+    border-bottom: 1px solid rgb(245, 190, 39);
+    border-left: 1px solid rgb(245, 190, 39);
+    border-right: 1px solid rgb(245, 190, 39);
+    color: #fff;
+    margin: 0 0 20px 0;
+}
+
+
+
+
+
+
+
+.mainIcon {
+    padding: 100px 0;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainIcon .inner {
+    display: flex;
+    gap: 54px;
+    text-align: center;
+    word-break: keep-all;
     background: #fff;
-    text-transform: uppercase;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 30px 10px;
 }
 
-.mainVisual .mainSlide .itm02 a {
-    display: inline-block;
-    padding: 3px 15px;
-    margin: 20px 0;
-    font-size: 15px;
-    font-weight: 500;
-    color: #fff;
-    background: #444444;
-    text-transform: uppercase;
+.mainIcon .inner figure {}
+
+.mainIcon .inner .itm {
+    width: 100px;
+    height: 100px;
+    background: rgb(245, 245, 245);
+    border-radius: 50%;
 }
 
-.mainVisual .mainSlide .itm03 a {
-    display: inline-block;
-    padding: 3px 15px;
-    margin: 20px 0;
-    font-size: 15px;
-    font-weight: 500;
-    color: #fff;
-    background: #444444;
-    text-transform: uppercase;
+.mainIcon .inner .itm figure {
+    flex: 1;
+    transform: translate(-5%, -5%);
+}
+
+.mainIcon .inner figure img {
+    width: 110px;
+}
+
+.mainIcon h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.mainIcon>p {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 60px 0;
+    text-align: center;
+}
+
+.mainIcon .inner p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 40px 0 40px 0;
+    text-align: center;
+    line-height: 20px;
+    word-break: keep-all;
 }
